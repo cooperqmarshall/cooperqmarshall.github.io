@@ -1,0 +1,86 @@
+html {
+	overflow-x: hidden;
+}
+
+.tech-item {
+	background-color: black;
+	font-style: italic;
+	color: white;
+	padding: 4px;
+	margin: 5px;
+}
+
+.section-container {
+	max-height: 1000px;
+	height: 100vh;
+}
+
+.transition-bar {
+	height: 2em;
+}
+
+.section-content {
+	padding: 15% 5px 10% 5px;
+}
+
+#navbar {
+	background-color: white;
+}
+
+#home {
+	background-color: #FFFFFF;
+}
+
+#about {
+	background-color: #BDC7EF;
+}
+
+#projects {
+	background-color: #1C2D73;
+	color: white;
+}
+
+.nav-item-custom {
+	margin-bottom: 2px;
+	border-bottom: 0px solid black;
+	transition: border-bottom margin-bottom 0.5s;
+}
+
+.nav-item-custom:hover {
+	margin-bottom: 0px;
+	border-bottom: 2px solid #9CABE7;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.nav-contact-icons {
+	display: none;
+	align-items: center;
+}
+
+.permahover {
+    display: flex;
+}
+
+.nav-contact-icon {
+	height:30px;
+	opacity:0.7;
+	transition: opacity 0.2s;
+}
+
+.nav-contact-icon:hover {
+	opacity: 0.9;
+}
+
+.chart {
+	width: 800px;
+	height:10vh;
+}
+
+@media (min-width: 800px) {
+	.chart {
+		width: 100%;
+	}
+} 
