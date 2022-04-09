@@ -2,11 +2,45 @@ html {
 	overflow-x: hidden;
 }
 
+.wave {
+  background: url(img/wave.svg) repeat-x; 
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  position: absolute;
+  bottom:0px
+}
+
+.wave:nth-of-type(2) {
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  bottom: 5px;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+
 .tech-item {
 	background-color: black;
 	font-style: italic;
 	color: white;
-	padding: 4px;
+	padding: 5px 7px;
 	margin: 5px;
 }
 
@@ -20,7 +54,7 @@ html {
 }
 
 .section-content {
-	padding: 15% 5px 10% 5px;
+	padding: 9% 5px;
 }
 
 #navbar {
@@ -32,11 +66,17 @@ html {
 }
 
 #about {
-	background-color: #BDC7EF;
+	background-color: #566DC4;
+	color: white;
 }
 
 #projects {
 	background-color: #1C2D73;
+	color: white;
+}
+
+#contact {
+	background-color: #080e29;
 	color: white;
 }
 
@@ -52,7 +92,8 @@ html {
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
+	color: white;
 }
 
 .nav-contact-icons {
@@ -77,6 +118,11 @@ a {
 .chart {
 	width: 800px;
 	height:10vh;
+}
+
+button {
+	padding: 5px !important;
+	margin: 3px;
 }
 
 @media (min-width: 800px) {
