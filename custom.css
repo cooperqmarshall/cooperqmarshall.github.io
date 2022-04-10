@@ -8,12 +8,12 @@ html {
   height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   position: absolute;
-  bottom:0px
+  bottom: 6rem;
 }
 
 .wave:nth-of-type(2) {
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  bottom: 5px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.1s infinite, swell 7s ease -1s infinite;
+  bottom: 5rem;
   opacity: 1;
 }
 
@@ -47,10 +47,16 @@ html {
 .section-container {
 	max-height: 1000px;
 	height: 100vh;
+	position: relative;
+}
+
+.transition {
+	position: absolute;
+	bottom: 0px;
 }
 
 .transition-bar {
-	height: 2em;
+	height: 2rem;
 }
 
 .section-content {
@@ -63,6 +69,7 @@ html {
 
 #home {
 	overflow-x: hidden;
+	overflow-y: hidden;
 	background-color: #FFFFFF;
 	position: relative;
 }
@@ -75,6 +82,11 @@ html {
 #projects {
 	background-color: #1C2D73;
 	color: white;
+}
+
+#projects-wrapper > div {
+	border: 1px solid black;
+	border-radius: 15px;
 }
 
 #contact {
@@ -94,7 +106,7 @@ html {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 	color: white;
 }
 
@@ -127,8 +139,9 @@ button {
 	margin: 3px;
 }
 
-@media (min-width: 800px) {
-	.chart {
-		width: 100%;
+@media (max-width: 700px) {
+	#projects {
+		min-height: 800px;
 	}
+
 } 

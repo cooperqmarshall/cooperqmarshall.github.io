@@ -70,8 +70,8 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid section-container" id="home">
-      <div class="row align-items-center section-content">
+    <div class="container-fluid section-container p-0" id="home">
+      <div class="row align-items-center section-content px-3">
         <div class="col-8 mt-5">
           <h1 class="display-1">Hello. I'm Cooper.</h1>
           <p class="lead">Software Developer, Data Visualization</p>
@@ -79,27 +79,26 @@
       </div>
       <div class="wave"></div>
       <div class="wave"></div>
+      <div class="transition w-100">
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #ccccff"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #9cabe7"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #7c90df"
+        ></div>
+      </div>
     </div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #ccccff"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #9cabe7"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #7c90df"
-    ></div>
-    <div
-      class="container-fluid section-container d-flex align-items-center"
-      id="about"
-    >
+    <div class="container-fluid section-container p-0" id="about">
       <div class="row section-content">
         <div class="col-md-7">
-          <h2 class="display-3">ABOUT</h2>
-          <p>
+          <h2 class="display-3 text-center">ABOUT</h2>
+          <p class="text-center">
             I am interested in engineering computational solutions and data
             visualizations that provide meaningful insight. I am currently
             developing visualization for research data with the Brotman Baty
@@ -109,8 +108,8 @@
           </p>
         </div>
         <div class="col-md-5">
-          <h2 class="display-3">TECH</h2>
-          <div class="row">
+          <h2 class="display-3 text-center">TECH</h2>
+          <div class="row justify-content-center">
             <div class="col-auto rounded tech-item">python</div>
             <div class="col-auto rounded tech-item">flask</div>
             <div class="col-auto rounded tech-item">pandas</div>
@@ -126,28 +125,25 @@
           </div>
         </div>
       </div>
+      <div class="transition w-100">
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #3a58cf"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #2c47b5"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #243a94"
+        ></div>
+      </div>
     </div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #3a58cf"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #2c47b5"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #243a94"
-    ></div>
-    <div
-      class="container-fluid section-container d-flex align-items-center"
-      id="projects"
-    >
-      <div class="row section-content">
-        <div class="row gx-3">
-          <div class="col-12">
-            <h2 class="display-3 text-center mb-4">PROJECTS</h2>
-          </div>
+    <div class="container-fluid section-container p-0" id="projects">
+      <div class="section-content">
+        <h2 class="display-3 text-center mb-4">PROJECTS</h2>
+        <div class="row g-3 justify-content-center" id="projects-wrapper">
           <div class="col-md-4">
             <h4 class="text-center">Gourmeg Recipe App</h4>
             <div class="row px-2 justify-content-center">
@@ -155,11 +151,11 @@
               <div class="col-auto rounded tech-item">flask</div>
               <div class="col-auto rounded tech-item">vue.js</div>
             </div>
-            <p class="text-center">
+            <p class="text-center mb-1">
               Fullstack recipe list app. Srapes recipe website for instructions
               and ingrediants then saves them to lists.
             </p>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mb-2">
               <button class="btn btn-outline-info">
                 <a href="https://gourmeg.org" target="_blank">Live Link</a>
               </button>
@@ -186,11 +182,11 @@
               <div class="col-auto rounded tech-item">sqlite3</div>
               <div class="col-auto rounded tech-item">plotly.js</div>
             </div>
-            <p class="text-center">
+            <p class="text-center mb-1">
               Vizualized wildtype and mutant mouse cell's developmental
               trajecotries based on gene expressions in 3d scatterplots.
             </p>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mb-2">
               <button class="btn btn-outline-info">
                 <a href="https://atlas.gs.washington.edu/mmca_v2" target="_blak"
                   >Live Link</a
@@ -212,11 +208,11 @@
               <div class="col-auto rounded tech-item">R</div>
               <div class="col-auto rounded tech-item">python</div>
             </div>
-            <p class="text-center">
+            <p class="text-center mb-1">
               Vizualized wildtype and mutant mouse cell's developmental
               trajecotries based on gene expressions in 3d scatterplots.
             </p>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mb-2">
               <button class="btn btn-outline-info">
                 <a
                   href="https://public.tableau.com/app/profile/cooper.marshall/viz/VaccineEffectivenessDashboardreview/SCANVaccination"
@@ -231,19 +227,21 @@
           </div>
         </div>
       </div>
+      <div class="transition w-100">
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #142052"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #101a42"
+        ></div>
+        <div
+          class="container-fluid transition-bar"
+          style="background-color: #0c1331"
+        ></div>
+      </div>
     </div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #142052"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #101a42"
-    ></div>
-    <div
-      class="container-fluid transition-bar"
-      style="background-color: #0c1331"
-    ></div>
     <div
       class="container-fluid section-container d-flex align-items-center justify-content-center"
       id="contact"
