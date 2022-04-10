@@ -62,7 +62,9 @@ html {
 }
 
 #home {
+	overflow-x: hidden;
 	background-color: #FFFFFF;
+	position: relative;
 }
 
 #about {
