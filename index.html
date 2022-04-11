@@ -31,7 +31,7 @@
 
   <body>
     <nav
-      class="navbar navbar-expand-sm navbar-light fixed-top border-bottom border-light"
+      class="navbar navbar-expand-sm navbar-light fixed-top border-bottom border-light p-0"
       id="navbar"
     >
       <div class="container">
@@ -58,31 +58,18 @@
             <li class="nav-item nav-contact nav-item-custom">
               <a class="nav-link" href="#contact">contact</a>
             </li>
-            <div class="nav-contact-icons">
-              <a
-                target="_blank"
-                class="px-1"
-                href="https://github.com/cooperqmarshall"
-              >
-                <img src="img/github.png" class="nav-contact-icon" />
-              </a>
-              <a
-                target="_blank"
-                class="px-1"
-                href="https://www.linkedin.com/in/cooperqmarshall/"
-              >
-                <img src="img/linkedin.png" class="nav-contact-icon" />
-              </a>
-            </div>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid section-container p-0" id="home">
-      <div class="row align-items-center section-content px-3">
+      <div
+        class="row align-items-center section-content px-3"
+        style="z-index: 99"
+      >
         <div class="col-8 mt-5">
           <h1 class="display-1">Hello. I'm Cooper.</h1>
-          <p class="lead">Software Developer, Data Visualization</p>
+          <p class="lead">Fullstack Software Developer, Data Visualization</p>
         </div>
       </div>
       <div class="wave"></div>
@@ -103,8 +90,8 @@
       </div>
     </div>
     <div class="container-fluid section-container p-0" id="about">
-      <div class="row section-content">
-        <div class="col-md-7">
+      <div class="row section-content px-2 m-0">
+        <div class="col-md-6">
           <h2 class="display-3 text-center">ABOUT</h2>
           <p class="text-center">
             I am interested in engineering computational solutions and data
@@ -115,7 +102,7 @@
             and Gates Ventures.
           </p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <h2 class="display-3 text-center">TECH</h2>
           <div class="row justify-content-center">
             <div class="col-auto rounded tech-item">python</div>
@@ -133,123 +120,127 @@
           </div>
         </div>
       </div>
-      <div class="transition w-100">
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #3a58cf"
-        ></div>
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #2c47b5"
-        ></div>
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #243a94"
-        ></div>
-      </div>
+      <div
+        class="container-fluid transition-bar"
+        style="background-color: #3a58cf"
+      ></div>
+      <div
+        class="container-fluid transition-bar"
+        style="background-color: #2c47b5"
+      ></div>
+      <div
+        class="container-fluid transition-bar"
+        style="background-color: #243a94"
+      ></div>
     </div>
     <div class="container-fluid section-container p-0" id="projects">
       <div class="section-content">
         <h2 class="display-3 text-center mb-4">PROJECTS</h2>
-        <div class="row g-3 justify-content-center" id="projects-wrapper">
+        <div class="row g-3 justify-content-center mx-3" id="projects-wrapper">
           <div class="col-md-4">
-            <h4 class="text-center">Gourmeg Recipe App</h4>
-            <div class="row px-2 justify-content-center">
-              <div class="col-auto rounded tech-item">postgres</div>
-              <div class="col-auto rounded tech-item">flask</div>
-              <div class="col-auto rounded tech-item">vue.js</div>
-            </div>
-            <p class="text-center mb-1">
-              Fullstack recipe list app. Srapes recipe website for instructions
-              and ingrediants then saves them to lists.
-            </p>
-            <div class="d-flex justify-content-center mb-2">
-              <button class="btn btn-outline-info">
-                <a href="https://gourmeg.org" target="_blank">Live Link</a>
-              </button>
-              <button class="btn btn-outline-info">
-                <a
-                  href="https://github.com/cooperqmarshall/recipe-app-ui"
-                  target="_blank"
-                  >Github UI</a
-                >
-              </button>
-              <button class="btn btn-outline-info">
-                <a
-                  href="https://github.com/cooperqmarshall/recipe-app-api"
-                  target="_blank"
-                  >Github API</a
-                >
-              </button>
+            <div>
+              <h4 class="text-center">Gourmeg Recipe App</h4>
+              <div class="row px-2 justify-content-center">
+                <div class="col-auto rounded tech-item">postgres</div>
+                <div class="col-auto rounded tech-item">flask</div>
+                <div class="col-auto rounded tech-item">vue.js</div>
+              </div>
+              <p class="text-center mb-1">
+                Fullstack recipe list app. Scrapes recipe website for
+                instructions and ingrediants then saves them to lists.
+              </p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-outline-info">
+                  <a href="https://gourmeg.org" target="_blank">Live Link</a>
+                </button>
+                <button class="btn btn-outline-info">
+                  <a
+                    href="https://github.com/cooperqmarshall/recipe-app-ui"
+                    target="_blank"
+                    >Github UI</a
+                  >
+                </button>
+                <button class="btn btn-outline-info">
+                  <a
+                    href="https://github.com/cooperqmarshall/recipe-app-api"
+                    target="_blank"
+                    >Github API</a
+                  >
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Mouse Mutant Cell Atlas</h4>
-            <div class="row px-2 justify-content-center">
-              <div class="col-auto rounded tech-item">javascript</div>
-              <div class="col-auto rounded tech-item">sqlite3</div>
-              <div class="col-auto rounded tech-item">plotly.js</div>
-            </div>
-            <p class="text-center mb-1">
-              Vizualized wildtype and mutant mouse cell's developmental
-              trajecotries based on gene expressions in 3d scatterplots.
-            </p>
-            <div class="d-flex justify-content-center mb-2">
-              <button class="btn btn-outline-info">
-                <a href="https://atlas.gs.washington.edu/mmca_v2" target="_blak"
-                  >Live Link</a
-                >
-              </button>
-              <button class="btn btn-outline-info">
-                <a
-                  href="https://github.com/cooperqmarshall/mmca-website"
-                  target="_blank"
-                  >Github</a
-                >
-              </button>
+            <div>
+              <h4 class="text-center">Mouse Mutant Cell Atlas</h4>
+              <div class="row px-2 justify-content-center">
+                <div class="col-auto rounded tech-item">javascript</div>
+                <div class="col-auto rounded tech-item">sqlite3</div>
+                <div class="col-auto rounded tech-item">plotly.js</div>
+              </div>
+              <p class="text-center mb-1">
+                Vizualized wildtype and mutant mouse cell's developmental
+                trajecotries based on gene expressions in 3d scatterplots.
+              </p>
+              <div class="d-flex justify-content-center mb-2">
+                <button class="btn btn-outline-info">
+                  <a
+                    href="https://atlas.gs.washington.edu/mmca_v2"
+                    target="_blak"
+                    >Live Link</a
+                  >
+                </button>
+                <button class="btn btn-outline-info">
+                  <a
+                    href="https://github.com/cooperqmarshall/mmca-website"
+                    target="_blank"
+                    >Github</a
+                  >
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
-            <h4 class="text-center">Vaccine Effectivness Dashboard</h4>
-            <div class="row px-2 justify-content-center">
-              <div class="col-auto rounded tech-item">tableau</div>
-              <div class="col-auto rounded tech-item">R</div>
-              <div class="col-auto rounded tech-item">python</div>
-            </div>
-            <p class="text-center mb-1">
-              Vizualized wildtype and mutant mouse cell's developmental
-              trajecotries based on gene expressions in 3d scatterplots.
-            </p>
-            <div class="d-flex justify-content-center mb-2">
-              <button class="btn btn-outline-info">
-                <a
-                  href="https://public.tableau.com/app/profile/cooper.marshall/viz/VaccineEffectivenessDashboardreview/SCANVaccination"
-                  target="_blank"
-                  >Live Link</a
-                >
-              </button>
-              <button class="btn btn-outline-info">
-                <a href="" target="_blank">Github</a>
-              </button>
+            <div>
+              <h4 class="text-center">Vaccine Effectivness Dashboard</h4>
+              <div class="row px-2 justify-content-center">
+                <div class="col-auto rounded tech-item">tableau</div>
+                <div class="col-auto rounded tech-item">R</div>
+                <div class="col-auto rounded tech-item">python</div>
+              </div>
+              <p class="text-center mb-1">
+                Interactive automatically-updated dashboard showing vaccine
+                effectiveness estimates using data from the SCAN Study.
+              </p>
+              <div class="d-flex justify-content-center mb-2">
+                <button class="btn btn-outline-info">
+                  <a
+                    href="https://public.tableau.com/app/profile/cooper.marshall/viz/VaccineEffectivenessDashboardreview/SCANVaccination"
+                    target="_blank"
+                    >Live Link</a
+                  >
+                </button>
+                <button class="btn btn-outline-info">
+                  <a href="" target="_blank">Github</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="transition w-100">
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #142052"
-        ></div>
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #101a42"
-        ></div>
-        <div
-          class="container-fluid transition-bar"
-          style="background-color: #0c1331"
-        ></div>
-      </div>
     </div>
+    <div
+      class="container-fluid transition-bar"
+      style="background-color: #142052"
+    ></div>
+    <div
+      class="container-fluid transition-bar"
+      style="background-color: #101a42"
+    ></div>
+    <div
+      class="container-fluid transition-bar"
+      style="background-color: #0c1331"
+    ></div>
     <div
       class="container-fluid section-container d-flex align-items-center justify-content-center"
       id="contact"
@@ -257,27 +248,32 @@
       <div class="row section-content w-100 justify-content-center">
         <div class="col-md-9">
           <h2 class="display-3 text-center">CONTACT</h2>
-          <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email-body">What do you want to talk about?</label>
-              <textarea
-                class="form-control"
-                id="email-body"
-                rows="3"
-              ></textarea>
-            </div>
-          </form>
+          <div class="d-flex justify-content-center">
+            <a
+              target="_blank"
+              class="px-1"
+              href="https://github.com/cooperqmarshall"
+            >
+              <img src="img/github.png" class="nav-contact-icon" />
+            </a>
+            <a
+              target="_blank"
+              class="px-1"
+              href="https://www.linkedin.com/in/cooperqmarshall/"
+            >
+              <img src="img/linkedin.png" class="nav-contact-icon" />
+            </a>
+            <a
+              target="_blank"
+              class="px-1"
+              href="mailto:cooperqmarshall@gmail.com"
+            >
+              <img src="img/mail.png" class="nav-contact-icon" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <footer>FOOTER</footer>
   </body>
 </html>

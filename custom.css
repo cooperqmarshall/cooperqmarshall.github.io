@@ -45,8 +45,6 @@ html {
 }
 
 .section-container {
-	max-height: 1000px;
-	height: 100vh;
 	position: relative;
 }
 
@@ -60,7 +58,12 @@ html {
 }
 
 .section-content {
+	position: relative;
 	padding: 9% 5px;
+}
+
+p {
+	font-size: 1.1rem;
 }
 
 #navbar {
@@ -68,6 +71,8 @@ html {
 }
 
 #home {
+	max-height: 1000px;
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	background-color: #FFFFFF;
@@ -84,14 +89,21 @@ html {
 	color: white;
 }
 
-#projects-wrapper > div {
+#projects-wrapper > div > div {
 	border: 1px solid black;
 	border-radius: 15px;
+	background-color: white;
+	color: black;
+	padding: 10px;
 }
 
 #contact {
 	background-color: #080e29;
 	color: white;
+}
+
+footer {
+  background-color: #ccccff;
 }
 
 .nav-item-custom {
@@ -107,7 +119,7 @@ html {
 
 a {
   text-decoration: none;
-	color: white;
+	color: black;
 }
 
 .nav-contact-icons {
@@ -139,9 +151,12 @@ button {
 	margin: 3px;
 }
 
+img {
+	filter: invert(100%);
+}
+
 @media (max-width: 700px) {
 	#projects {
 		min-height: 800px;
 	}
-
 } 
